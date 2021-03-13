@@ -10,60 +10,106 @@
   </head>
   <body>
     <header>
+      <div class="header-content">
         <a href="index.html">
-            <img src="images/SquareEyes_Logo_small.png" alt="Square Eyes logo">
+          <img src="images/SquareEyes_Logo_small.png" alt="Square Eyes logo" />
         </a>
+
         <nav>
-            <form action="">
-                <input type="text" name="search" id="search" value="Search for films">
-            </form>
-            <a href="browse.html">Browse films</a>
-            <a href="account.html">My account</a>
-            <a href="create_acct.html">Sign up</a>
+          <div class="search-flex-container-nav">
+            <div class="search-wrapper-nav">
+              <img
+                src="icons/Magnifying_glass_icon.png"
+                class="search-icon"
+                alt="magnifying glass icon"
+              />
+              <!--- Don't know 
+                            if it's correct semantics to have this item in the HTML, but I used a tutorial on how to 
+                            get this icon inside the search bar.-->
+              <input
+                type="text"
+                name="search"
+                class="search-nav"
+                placeholder="Search for films"
+              />
+            </div>
+          </div>
+
+          <a href="browse.html">Browse films</a>
+          <a href="account.html">My account</a>
+          <a href="create_acct.html" class="sign-up-nav-button">Sign up</a>
         </nav>
+      </div>
     </header>
+
     <main>
+      <div>
+        <section class="welcome">
+          <div class="welcome__logo-container">
+            <img
+              class="welcome__logo"
+              src="images/SquareEyes_Logo_big.png"
+              alt="Square Eyes. Connecting Film-Lovers"
+            />
+          </div>
 
-        <div>
-            <section>
-                <div>
-                    <img src="images/SquareEyes_Logo_big.png" alt="Square Eyes. Connecting Film-Lovers">
-                </div>
-                <div>
-                    <h1>Watch independent films</h1>
-                    <p>
-                        The films on Square Eyes are crafted by people who are passionate
-                        about making films. Discover and watch interesting films while at
-                        the same time supporting small filmmakers.
-                    </p>
-                    <h1>Sell films you've purchased</h1>
-                    <p>
-                        As an independent filmmaker using Square Eyes you can reach a wider
-                        audience for your films. It also enables you to benefit financially
-                        from the films you've produced.
-                    </p>
-                </div>
-                    <a href="create_acct.html">Sign up</a>
-            </section>
-        </div>
+          <div class="welcome__text-container">
+            <div class="welcome__text-container__text1">
+              <h1>Watch independent films</h1>
+              <p>
+                The films on Square Eyes are crafted by people who are
+                passionate about making films. Discover and watch interesting
+                films while at the same time supporting small filmmakers.
+              </p>
+            </div>
+            <div class="welcome__text-container__text2">
+              <h1>Sell films you've produced</h1>
+              <p>
+                As an independent filmmaker using Square Eyes you can reach a
+                wider audience for your films. It also enables you to benefit
+                financially from the films you've produced.
+              </p>
+            </div>
+          </div>
 
-        <div>
-            <section>
-                <h2>Highest rated films</h2>    
-            </section>
-            <section>
-                <h2>Featured films</h2>
-                <!-- Insert carousel next/previous button -->
-                <!-- Insert carousel -->    
-            </section>
+          <a href="create_acct.html" class="cta cta-landing-page">Sign up</a>
+        </section>
+      </div>
+      <div class="landing-content-background">
+        <div class="landing-content">
+          <section>
+            <h2>Highest rated films</h2>
+          </section>
+          <section>
+            <h2>Featured films</h2>
+            <!-- Insert carousel next/previous button -->
+            <!-- Insert carousel -->
+          </section>
         </div>
-    
+      </div>
     </main>
 
     <footer>
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">Instagram</a>
+        <div class="footer-flex-container">
+            <div class="footer-flex-item1 footer-flex-items">
+                <img src="icons/Path_38.png" alt="Facebook icon">
+                <a href="#">Facebook</a>
+                <img src="icons/Path_39.png" alt="Twitter icon">
+                <a href="#">Twitter</a>
+                <img src="icons/Path_40.png" alt="Instagram icon">
+                <a href="#">Instagram</a>
+            </div>
+            <div class="footer-flex-item2 footer-flex-items">
+                <p>Subscribe to our newsletter</p>
+                <form action="#">
+                    <input type="email" name="email" placeholder="Email Address">
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="footer-flex-item3 footer-flex-items">
+                <p>+55 555 555 5553</p>
+                <a href="#">mail@squareeyes.com</a>
+            </div>
     </footer>
   </body>
 </html>
