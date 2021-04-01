@@ -138,6 +138,12 @@ a {
 
 /* LANDING PAGE
 ----------------*/
+
+
+/* Redesign section using grids so that h1 appears above 
+rest of content when logo disappears at low screen widths */
+
+
 .welcome {
 	max-width: 1366px;
 	margin: 20px auto;
@@ -154,6 +160,13 @@ a {
 
 .welcome__logo {
 	width: 100%;
+}
+
+.welcome__slogan {
+	text-align: center;
+	font-style: italic;
+	font-size: 2rem;
+	margin-top: 0;
 }
 
 .welcome__text-container {
