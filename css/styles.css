@@ -45,45 +45,15 @@ a {
 	background: linear-gradient(#FFFFFF, #FCC889);
 }
 
-.hamburger-menu-icon {
-	display: none;
-}
-
-/* Header 
+/* HEADER
 ----------------*/
-header {
+.header {
     background: linear-gradient(.25turn, #FFF, 30%, #59111d 50%);
     border: solid 1px #707070;
 	box-shadow: 0 3px 3px #F0F0F0;
 }
 
-nav {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	justify-content: flex-end;
-}
-
-nav a {
-	text-transform: uppercase;
-	padding: 1em;
-	text-align: center;
-	border: 1px hidden;
-	border-radius: 5px;
-}
-
-nav form {
-	width: 100%;
-	display: flex;
-	justify-content: flex-end;
-}
-
-nav a:hover {
-	text-decoration: underline;
-	background: #74302F;
-}
-
-.header-content {
+.header__main-flex-container {
 	max-width: 1366px;
 	margin: auto;
 	display: flex;
@@ -92,20 +62,49 @@ nav a:hover {
 	padding: 10px 20px;
 }
 
-.sign-up-nav-button {
+.header__hamburger-menu-icon {
+	display: none;
+}
+
+#hamburger-menu {
+	display: none;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+.nav__link {
+	text-transform: uppercase;
+	padding: 1em;
+	text-align: center;
+	border: 1px hidden;
+	border-radius: 5px;
+}
+
+.nav__link:hover {
+	text-decoration: underline;
+	background: #74302F;
+}
+
+
+.nav__link--border {
 	border: 1px solid #FFFFFF;
 	border-radius: 5px;
 	margin-left: 0.5em;
 }
 
-.sign-up-nav-button:hover {
+.nav__link--border:hover {
 	color: #59111d;
 	background: linear-gradient(#FFF, #FCC889);
 	text-decoration: none;
 }
 
-.search-flex-container-nav { /*Need this container to justify-content 
-	without messing up .search-icon*/
+.nav__search-flex-container-outer { /*Need this container to justify-content 
+	without messing up .nav__search-icon which has position: absolute*/
 	flex-grow: 1;
 	margin: 0 40px;
 	min-width: 100px;
@@ -114,21 +113,21 @@ nav a:hover {
 	justify-content: flex-end;
 }
 
-.search-wrapper-nav {
+.nav__search-flex-container-inner {
 	position: relative;
 	display: flex;
 	width: 100%;
 	max-width: 375px;
 }
 
-.search-icon {
+.nav__search-icon {
     position: absolute;
     top: 8px;
     left: 8px;
     width: 14px;
   }
 
-.search-nav {
+.nav__search {
 	border: 1px #707070;
 	height: 25px;
 	padding: 2px 2px 2px 30px;
@@ -136,11 +135,8 @@ nav a:hover {
 	max-width: 375px;
 }
 
-#hamburger-menu {
-	display: none;
-}
 
-/*Landing page
+/* LANDING PAGE
 ----------------*/
 .welcome {
 	max-width: 1366px;
@@ -203,13 +199,50 @@ nav a:hover {
 	color: #FFFFFF;
 }
 
-.landing-content__featured__carousel {
-	background-color: #59111d;
+/* FEATURED FILMS
+----------------*/
+.featured {
 	height: 750px;
-	margin: 10px 20px 30px 0;
+	margin: 0 20px 30px 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto 20px repeat(5, auto);
+	background-color: #59111d;
 }
 
-/*Footer
+.featured__heading {
+	background-color: #373736;
+	grid-column: span 2;
+}
+
+
+.featured__browse-buttons {	
+	
+	background-color: #373736;
+	align-self: center;
+	justify-self: end;
+}
+
+.featured__title {
+	grid-column: span 3;
+}
+
+.featured__image {
+	grid-column: span 3;
+	background-image: url("../images/nadim-merrikh-MBCWO39JVsI-unsplash_medium.png");
+	height: 360px;
+}
+
+.featured__synopsis {
+	grid-column: span 3;
+}
+
+.featured__info {
+	grid-column: span 2;
+}
+
+
+/* FOOTER
 ----------------*/
 footer {
 	background-color: #707070;
@@ -263,16 +296,16 @@ footer {
 	border-radius: 3px;
 }
 
-/* Media queries
+/* MEDIA QUERIES
 ----------------*/
 
 @media only screen and (max-width: 900px) {
 
-	nav {
+	.nav {
 		flex-wrap: wrap-reverse;
 	}
 
-	.search-flex-container-nav {
+	.nav__search-flex-container-outer {
 		width: 90%;
 		max-width: 90%;
 		margin: 10px 0 0 40px;
@@ -314,7 +347,7 @@ footer {
 		grid-row: 2;
 	}
 	
-	.landing-content__featured {
+	.featured {
 		grid-row: 1; 
 	}
 
@@ -329,19 +362,19 @@ footer {
 
 @media only screen and (max-width: 650px) {
 
-	nav {
+	.nav {
 		display: none;
 	}
 
-	.hamburger-menu-icon {
+	.header__hamburger-menu-icon {
 		display: inline;
 	}
 
-	.sign-up-nav-button {
+	.nav__sign-up {
 		margin-top: 10px;
 	}
 
-	#hamburger-menu:checked ~ nav { /*Using Firefox dev tools it looks like
+	#hamburger-menu:checked ~ .nav { /*Using Firefox dev tools it looks like
 		the menu sometimes overflows to the right. Not sure why */
 		width: 100%;
 		display: flex;
@@ -354,7 +387,7 @@ footer {
 		padding-bottom: 15px;
 	}
 
-	.search-flex-container-nav {
+	.nav__search-flex-container-outer {
 		margin: 15px 0 10px 0;
 		justify-content: center;
 	}

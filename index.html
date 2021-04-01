@@ -9,22 +9,22 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div class="header-content">
+    <header class="header">
+      <div class="header__main-flex-container">
         <a href="index.html">
           <img src="images/SquareEyes_Logo_small.png" alt="Square Eyes logo" />
         </a>
 
-        <label for="hamburger-menu"><img src="icons/menu-button.png" class="hamburger-menu-icon"></label>
+        <label for="hamburger-menu"><img src="icons/menu-button.png" class="header__hamburger-menu-icon"></label>
         <input type="checkbox" id="hamburger-menu">
 
-        <nav>
-          <div class="search-flex-container-nav">
-            <div class="search-wrapper-nav">
+        <nav class="nav">
+          <div class="nav__search-flex-container-outer">
+            <div class="nav__search-flex-container-inner">
               <img
                 src="icons/Magnifying_glass_icon.png"
-                class="search-icon"
-                alt="magnifying glass icon"
+                class="nav__search-icon"
+                alt="Magnifying glass. Icon."
               />
               <!--- Don't know 
                             if it's correct semantics to have this item in the HTML, but I used a tutorial on how to 
@@ -32,15 +32,15 @@
               <input
                 type="text"
                 name="search"
-                class="search-nav"
+                class="nav__search"
                 placeholder="Search for films"
               />
             </div>
           </div>
 
-          <a href="browse.html">Browse films</a>
-          <a href="account.html">My account</a>
-          <a href="create_acct.html" class="sign-up-nav-button">Sign up</a>
+          <a href="browse.html" class="nav__link">Browse films</a>
+          <a href="account.html" class="nav__link">My account</a>
+          <a href="create_acct.html" class=" nav__link nav__link--border">Sign up</a>
         </nav>
       </div>
     </header>
@@ -51,14 +51,18 @@
           <div class="welcome__logo-container">
             <img
               class="welcome__logo"
-              src="images/SquareEyes_Logo_big.png"
-              alt="Square Eyes. Connecting Film-Lovers"
+              src="images/SquareEyes_Logo_big_noslogan.png"
+              alt="Square Eyes logo"
             />
+            <h1>Connecting Film-Lovers</h1>
           </div>
+
+            
+
 
           <div class="welcome__text-container">
             <div class="welcome__text-container__text1">
-              <h1>Watch independent films</h1>
+              <h2>Watch independent films</h2>
               <p>
                 The films on Square Eyes are crafted by people who are
                 passionate about making films. Discover and watch interesting
@@ -66,7 +70,7 @@
               </p>
             </div>
             <div class="welcome__text-container__text2">
-              <h1>Sell films you've produced</h1>
+              <h2>Sell films you've produced</h2>
               <p>
                 As an independent filmmaker using Square Eyes you can reach a
                 wider audience for your films. It also enables you to benefit
@@ -121,11 +125,38 @@
                 
             </div>
           </section>
-          <section class="landing-content__featured">
+          <section class="featured">
+            <div class="featured__heading">
             <h2>Featured films</h2>
-            <div class="landing-content__featured__carousel">
-                Insert carousel
             </div>
+            <div class="featured__browse-buttons">
+                <div>
+                <a href="#">Back</a>
+                <a href="#">Forward</a>
+              </div>
+            </div>
+            <div class="featured__indicator featured__indicator-1"></div>
+            <div class="featured__indicator featured__indicator-2"></div>
+            <div class="featured__indicator featured__indicator-3"></div>
+            <div class="featured__title">
+              <p class="film-title">Ancestors of our nation</p>
+            </div>
+            <div class="featured__image">
+              <a href="#" class="play-trailer">Play trailer</a>
+            </div>
+            <div class="featured__synopsis">
+              A dramatic journey through the history of the nation. The ancestors 
+              have left marks on society that are still visible. How does this affect
+               people today?
+              </div>
+              <div class="featured__info">
+                <p>Average Rating: 3.6 / 5</p>
+                <p>Genre: Drama</p>
+                <p>Producer: Kiri Horton</p>
+              </div>
+              <div class="featured__go-to-film">
+                <a href="#" class="go-to-film">Go to film</a>
+              </div>
           </section>
         </div>
       </div>
