@@ -135,42 +135,32 @@ a {
 	max-width: 375px;
 }
 
-
 /* LANDING PAGE
 ----------------*/
-
-
-/* Redesign section using grids so that h1 appears above 
-rest of content when logo disappears at low screen widths */
-
 
 .welcome {
 	max-width: 1366px;
 	margin: 20px auto;
+	padding: 0 20px;
 	display: grid;
-	gap: 40px;
-	align-items: center;
-	grid-template-columns: 1fr 1fr;
+	gap: 5px 20px;
+	place-items: center;
+	grid-template: repeat(auto, 4) / 1fr 1fr;
 	color: #000000;
 }
 
-.welcome__logo-container {
-	margin-left: 20px;
+.welcome__logo {
+	max-width: 600px;
+	grid-column: span 2;
 }
 
-.welcome__logo {
-	width: 100%;
-}
 
 .welcome__slogan {
 	text-align: center;
 	font-style: italic;
 	font-size: 2rem;
 	margin-top: 0;
-}
-
-.welcome__text-container {
-	margin-right: 20px;
+	grid-column: span 2;
 }
 
 .cta--span {
@@ -324,23 +314,14 @@ footer {
 		margin: 10px 0 0 40px;
 	}
 
+
 	.welcome {
-		grid-template-columns: 1fr;
-		gap: 20px;
+		grid-template: repeat(auto, 5) / 1fr 1fr;
+
 	}
 
-	.cta-landing-page {
-		grid-column: 1;
-	}
-
-	.welcome__logo-container {
-		display: none;
-	}
-
-	.welcome__text-container {
-		margin: 0 20px;
-		display: flex;
-		flex-direction: column;
+	.welcome__desc {
+		grid-column: span 2;
 	}
 
 	.landing-content {
@@ -375,6 +356,10 @@ footer {
 
 @media only screen and (max-width: 650px) {
 
+	.header {
+		background: linear-gradient(.25turn, #FFF, 45%, #59111d 65%);
+	}
+
 	.nav {
 		display: none;
 	}
@@ -403,6 +388,10 @@ footer {
 	.nav__search-flex-container-outer {
 		margin: 15px 0 10px 0;
 		justify-content: center;
+	}
+
+	.welcome__logo {
+		display: none;
 	}
 
 	.landing-content__highest-rated__grid-container {
