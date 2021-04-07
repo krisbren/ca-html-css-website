@@ -30,6 +30,11 @@ a {
 	color: #FFFFFF;
 }
 
+main {
+	background-color: #373736;
+	min-height: 100vh;
+}
+
 .cta {
 	font-size: 1.5em;
 	background: linear-gradient(#FCC889, #8A1F27);
@@ -45,6 +50,30 @@ a {
 	background: linear-gradient(#FFFFFF, #FCC889);
 }
 
+.wide-page {
+	max-width: 1366px;
+	margin: auto;
+}
+
+.slim-page {
+
+}
+
+.padded {
+	padding: 10px 20px;
+}
+
+.film-card {
+	margin: 0 30px 30px 0;
+}
+
+.film-card__list {
+	list-style-type: none;
+	padding: 0;
+	line-height: 1.5;
+	margin-top: 0;
+}
+
 /* HEADER
 ----------------*/
 .header {
@@ -54,8 +83,6 @@ a {
 }
 
 .header__main-flex-container {
-	max-width: 1366px;
-	margin: auto;
 	display: flex;
 	justify-content: space-between; /*Not supported on some Edge browsers according to css-tricks*/
 	align-items: center;
@@ -135,17 +162,19 @@ a {
 	max-width: 375px;
 }
 
-/* LANDING PAGE
+/* WELCOME
 ----------------*/
-
 .welcome {
-	max-width: 1366px;
-	margin: 20px auto;
-	padding: 0 20px;
+	background-color: #FFFFFF;
+}
+
+.welcome__grid-container {
+	margin-bottom: 20px;
+	padding: 20px;
 	display: grid;
 	gap: 5px 20px;
 	place-items: center;
-	grid-template: repeat(auto, 4) / 1fr 1fr;
+	grid-template: repeat(4, auto) / 1fr 1fr;
 	color: #000000;
 }
 
@@ -153,7 +182,6 @@ a {
 	max-width: 600px;
 	grid-column: span 2;
 }
-
 
 .welcome__slogan {
 	text-align: center;
@@ -168,13 +196,10 @@ a {
 	margin: auto;
 }
 
-.landing-content-background {
-	background-color: #373736;
-}
+/* LANDING PAGE CONTENT
+----------------*/
 
 .landing-content {
-	max-width: 1366px;
-	margin: 20px auto;
 	display: grid;
 	grid-template-columns: auto 1fr;
 	justify-content: left;
@@ -244,19 +269,43 @@ a {
 	grid-column: span 2;
 }
 
+/* SEARCH PAGE
+----------------*/
+
+.search-page__search {
+	margin: 64px 0;
+	border: 1px #707070;
+	height: 40px;
+	width: 613px;
+	max-width: 70%;
+	padding: 2px 2px 2px 20px;
+}
+
+.search-page__submit-search {
+	position: relative;
+	top: 14px;
+	left: 8px;
+}
+
+.search-page__search-term {
+	font-style: italic;
+}
+
+.search-page__flex-container {
+	margin-top: 25px;
+	display: flex;
+	flex-wrap: wrap;
+}
 
 /* FOOTER
 ----------------*/
 
 .footer {
 	background-color: #707070;
-	margin-top: -20px; /* Hack to remove the space between main and footer */
 	padding: 50px 30px;
 }
 
 .footer__flex-container {
-	max-width: 1366px;
-	margin: auto;
 	display: flex;
 	justify-content: space-between; /*Not supported on some Edge browsers according to css-tricks*/
 
