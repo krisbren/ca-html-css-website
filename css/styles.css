@@ -307,8 +307,8 @@ main {
 
 .footer__flex-container {
 	display: flex;
-	justify-content: space-between; /*Not supported on some Edge browsers according to css-tricks*/
-	place-items: center;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .footer__social-media {
