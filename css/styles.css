@@ -16,7 +16,11 @@ html, body {
 	font-family:  'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
-h1, h2 {
+h1 {
+	margin: 0 0 64px 0;
+}
+
+h2 {
 	margin-bottom: 10px;
 }
 
@@ -50,17 +54,17 @@ main {
 	background: linear-gradient(#FFFFFF, #FCC889);
 }
 
-.wide-page {
+.wide-page { /*Hvis narrow-page ikke trengs kan denne kanskje kanskje legges inn i body? */
 	max-width: 1366px;
 	margin: auto;
 }
 
-.slim-page {
+.narrow-page { /*Ser ut som denne ikke trengs siden alt er midtstilt på de tynne sidene.*/
 
 }
 
 .padded {
-	padding: 10px 20px;
+	padding: 64px 20px;
 }
 
 .film-card {
@@ -188,6 +192,7 @@ main {
 	font-style: italic;
 	font-size: 2rem;
 	margin-top: 0;
+	margin-bottom: 10px;
 	grid-column: span 2;
 }
 
