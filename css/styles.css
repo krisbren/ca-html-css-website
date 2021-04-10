@@ -308,16 +308,27 @@ main {
 .footer__flex-container {
 	display: flex;
 	justify-content: space-between; /*Not supported on some Edge browsers according to css-tricks*/
-
+	place-items: center;
 }
 
-.footer__grid-container {
-	display: grid;
-	gap: 15px;
-	grid-template-columns: auto 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	align-items: center;
+.footer__social-media {
+	display: flex;
+	place-items: center;
 }
+
+.footer__social-media-icon-1 {
+	margin-right: 20px;
+}
+
+.footer__social-media-icon-2 {
+	margin-right: 11px;
+}
+
+.footer__social-media-icon-3 {
+	margin-right: 11px;
+}
+
+
 
 .footer__input::placeholder {
 	color: #FFFFFF;
@@ -454,6 +465,7 @@ main {
 
 	.footer__flex-container {
 		flex-direction: column;
+		place-items: normal;
 	}
 
 	.footer__flex-item {
