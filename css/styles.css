@@ -61,10 +61,6 @@ main {
 	background: linear-gradient(#FFFFFF, #FCC889);
 }
 
-.cta--text-color-override {
-	color:#FFFFFF;
-}
-
 .film-card {
 	margin: 0 30px 30px 0;
 }
@@ -80,6 +76,16 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.normal-anchor {
+	color: #FCC889;
+	text-decoration: underline;
+}
+
+.normal-anchor:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
 }
 
 .padded {
@@ -384,34 +390,40 @@ main {
 	max-width: 50px;
 }
 
-/* CREATE ACCOUNT PAGE
+/* CREATE ACCOUNT -,
+ACCOUNT CREATED - and
+SIGN UP PAGES
 ----------------*/
 
-.create-acct {
+.log-in {
 	display: flex;
 	flex-direction: column;
 }
 
-.create-acct__label {
+.log-in__anchor {
+	align-self: flex-end;
+	margin-bottom: 32px;
+	margin-top: 8px;
+}
+
+.log-in__label {
 	text-transform: uppercase;
 	margin-bottom: 5px;
 }
 
-.create-acct__input {
+.log-in__input {
 	margin-bottom: 32px;
 	min-width: 350px;
 	padding: 10px;
 	border-radius: 8px;
 }
 
-.create-acct__submit {
+.log-in__submit {
+	color:#FFFFFF;
 	margin: 32px auto;
 }
 
-/* ACCOUNT CREATED PAGE
-----------------*/
-
-.account-created-paragraph {
+.log-in-paragraph {
 	margin-bottom: 32px;
 	max-width: 350px;
 }
@@ -500,6 +512,7 @@ main {
 		z-index: 1000;
 		background-color: #59111d;
 		padding-bottom: 15px;
+		border: solid 1px #707070;
 	}
 
 	.nav__search-flex-container-outer {
@@ -532,8 +545,12 @@ main {
 		margin-bottom: 20px; 
 	}
 
-	.create-acct__input {
+	.log-in__input {
 		min-width: 150px;
+	}
+
+	.text-box {
+		padding: 56px 32px 24px 32px;
 	}
 
 }
