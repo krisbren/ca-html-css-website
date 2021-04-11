@@ -9,6 +9,8 @@
 	font-weight: bold;
 }
 
+/* GLOBAL
+----------------*/
 html, body {
 	color: #FFFFFF;
 	margin: 0;
@@ -36,7 +38,12 @@ a {
 
 main {
 	background-color: #373736;
-	min-height: 100vh;
+	min-height: 80vh;
+}
+
+.colored-box {
+	background-color: #59111D;
+	box-shadow: 0 3px 3px #2F2F2E;
 }
 
 .cta {
@@ -46,7 +53,7 @@ main {
 	border-radius: 10px;
 	padding: 10px 100px;
 	text-decoration: none;
-	box-shadow: 0 3px 3px #F0F0F0;
+	box-shadow: 0 3px 3px #2F2F2E;
 }
 
 .cta:hover {
@@ -54,17 +61,8 @@ main {
 	background: linear-gradient(#FFFFFF, #FCC889);
 }
 
-.wide-page { /*Hvis narrow-page ikke trengs kan denne kanskje kanskje legges inn i body? */
-	max-width: 1366px;
-	margin: auto;
-}
-
-.narrow-page { /*Ser ut som denne ikke trengs siden alt er midtstilt på de tynne sidene.*/
-
-}
-
-.padded {
-	padding: 64px 20px;
+.cta--text-color-override {
+	color:#FFFFFF;
 }
 
 .film-card {
@@ -78,12 +76,31 @@ main {
 	margin-top: 0;
 }
 
+.narrow-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.padded {
+	padding: 64px 20px;
+}
+
+.text-box {
+	padding: 56px 56px 24px 56px;
+}
+
+.wide-page {
+	max-width: 1366px;
+	margin: auto;
+}
+
 /* HEADER
 ----------------*/
 .header {
     background: linear-gradient(.25turn, #FFF, 30%, #59111d 50%);
     border: solid 1px #707070;
-	box-shadow: 0 3px 3px #F0F0F0;
+	box-shadow: 0 3px 3px #2F2F2E;
 }
 
 .header__main-flex-container {
@@ -199,6 +216,8 @@ main {
 .cta--span {
 	grid-column: span 2;
 	margin: auto;
+	box-shadow: 0 3px 3px #0003;
+
 }
 
 /* LANDING PAGE CONTENT
@@ -307,13 +326,14 @@ main {
 
 .footer {
 	background-color: #707070;
-	padding: 50px 30px;
+	padding: 56px 0 48px 0;
 }
 
 .footer__flex-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0 20px;
 }
 
 .footer__social-media {
@@ -349,6 +369,7 @@ main {
 
 .footer__input {
 	border-color: #FFFFFF;
+	color: #FFFFFF;
 	border-radius: 3px;
 	height: 25px;
 	padding: 2px 2px 2px 20px;
@@ -361,6 +382,38 @@ main {
 	padding: 8px 15px;
 	border-radius: 3px;
 	max-width: 50px;
+}
+
+/* CREATE ACCOUNT PAGE
+----------------*/
+
+.create-acct {
+	display: flex;
+	flex-direction: column;
+}
+
+.create-acct__label {
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.create-acct__input {
+	margin-bottom: 32px;
+	min-width: 350px;
+	padding: 10px;
+	border-radius: 8px;
+}
+
+.create-acct__submit {
+	margin: 32px auto;
+}
+
+/* ACCOUNT CREATED PAGE
+----------------*/
+
+.account-created-paragraph {
+	margin-bottom: 32px;
+	max-width: 350px;
 }
 
 /* MEDIA QUERIES
@@ -471,11 +524,16 @@ main {
 	.footer__flex-container {
 		flex-direction: column;
 		place-items: normal;
+		padding: 0 20px;
 	}
 
 	.footer__flex-item {
 		margin-top: 20px;
 		margin-bottom: 20px; 
+	}
+
+	.create-acct__input {
+		min-width: 150px;
 	}
 
 }
