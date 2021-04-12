@@ -61,6 +61,17 @@ main {
 	background: linear-gradient(#FFFFFF, #FCC889);
 }
 
+.cta--weak {
+	background: none;
+	border: 1px solid #FFFFFF;
+}
+
+.cta--weak:hover {
+	color: #FFFFFF;
+	background: linear-gradient(#707070, #383838);
+}
+
+
 .film-card {
 	margin: 0 30px 30px 0;
 }
@@ -70,6 +81,7 @@ main {
 	padding: 0;
 	line-height: 1.5;
 	margin-top: 0;
+	margin-bottom: 32px;
 }
 
 .narrow-page {
@@ -100,6 +112,7 @@ main {
 	max-width: 1366px;
 	margin: auto;
 }
+
 
 /* HEADER
 ----------------*/
@@ -275,7 +288,6 @@ main {
 
 
 .featured__browse-buttons {	
-	
 	background-color: #373736;
 	align-self: center;
 	justify-self: end;
@@ -428,11 +440,51 @@ SIGN UP PAGES
 	max-width: 350px;
 }
 
+/* FILM PAGES
+----------------*/
+
+.large-film-card {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	place-items: center;
+}
+
+.large-film-card__info {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 1fr auto;
+	gap: 50px 20px;
+}
+
+.large-film-card__trailer {
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/films/ancestors_of_the_nation_large.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+
+.large-film-card__synopsis {
+	grid-column: span 2;
+}
+
+.film-page-cta {
+	margin: 32px auto;
+	display: block;
+	width: 200px;
+	text-align: center;
+}
+
 /* MEDIA QUERIES
 ----------------*/
 
 @media only screen and (max-width: 900px) {
 
+	.large-film-card {
+		grid-template: 360px auto / auto;
+	}
+	
 	.nav {
 		flex-wrap: wrap-reverse;
 	}
@@ -485,10 +537,14 @@ SIGN UP PAGES
 
 @media only screen and (max-width: 650px) {
 
-	.header {
-		background: linear-gradient(.25turn, #FFF, 45%, #59111d 65%);
+	.film-page-cta {
+		width: 150px;
+		padding: 10px 50px;
 	}
-
+	
+	.header {
+		background: linear-gradient(.25turn, #FFF, 65%, #59111d 100%);
+	}
 	.nav {
 		display: none;
 	}
