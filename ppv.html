@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Square Eyes - Connecting Film-Lovers. Account Created." />
-    <title>Square Eyes | Account Created</title>
+    <meta name="description" content="Square Eyes - Connecting Film-Lovers. Purchase Film." />
+    <title>Square Eyes | Purchase Film</title>
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
@@ -42,13 +42,47 @@
     </header>
     <main>
       <div class="narrow-page padded">      
-        <h1>Account created</h1>
-        <div class="colored-box text-box">
-          <p class="log-in-paragraph">Thank you.</p>
-          <p class="log-in-paragraph">A link to confirm your account creation
-            has been sent to your email address.</p>
+        <h1>Purchase film</h1>
+        <p>Choose payment method below</p>
+        <div class="pay-method">
+          <a href="#">
+          <img src="icons/payment_1.png" alt="Pay using credit card">
+          </a>
+          <a href="#">
+            <img src="icons/payment_2.png" alt="Pay using Paypal">
+          </a>
+          <a href="#">
+            <img src="icons/payment_3.png" alt="Pay with Amazon Pay">
+          </a>
         </div>
-        <a href="login.html" class="cta log-in__submit">Log in</a>
+        <form>
+          <fieldset class="pay-field">
+            <legend class="pay-field__title">Billing info</legend>
+            <label for="name" class="log-in__label">Full name</label>
+            <input class="log-in__input" class="log-in__input class="log-in__input"" type="text" name="name">
+            <label for="address" class="log-in__label">Address</label>
+            <input class="log-in__input" type="text" name="address">
+            <label for="city" class="log-in__label">City</label>
+            <input class="log-in__input" type="text" name="city">
+            <label for="zip" class="log-in__label">Zip</label>
+            <input class="log-in__input" type="text" name="zip">  
+            <label for="country" class="log-in__label">Country</label>
+            <input class="log-in__input" type="text" name="country">  
+          </fieldset>
+          <fieldset class="pay-field">
+            <legend class="pay-field__title">Credit card info</legend>
+            <label class="log-in__label" for="card_number">Card number</label class="log-in__label">
+            <input class="log-in__input" type="text" name="card_number">
+            <label class="log-in__label" for="cardh_name">Cardholder name</label class="log-in__label">
+            <input class="log-in__input" type="text" name="cardh_name">
+            <label class="log-in__label" for="expire">Expire date</label class="log-in__label">
+            <input class="log-in__input" type="text" name="expire">
+            <label class="log-in__label" for="ccv">ccv</label class="log-in__label">
+            <input class="log-in__input" type="text" name="ccv">  
+          </fieldset>
+          <input type="submit" value="Submit" class="cta log-in__submit">
+        </form>
+      </div> 
     </main>
     <footer class="footer">
       <div class="footer__flex-container wide-page">
