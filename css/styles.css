@@ -52,7 +52,6 @@ main {
 	border: 1px solid #373736;
 	border-radius: 10px;
 	padding: 10px 100px;
-	text-decoration: none;
 	box-shadow: 0 3px 3px #2F2F2E;
 }
 
@@ -446,7 +445,6 @@ SIGN UP PAGES
 .large-film-card {
 	display: grid;
 	grid-template-columns: 50% 50%;
-	place-items: center;
 }
 
 .large-film-card__info {
@@ -456,25 +454,53 @@ SIGN UP PAGES
 	gap: 50px 20px;
 }
 
+
+.large-film-card__play-trailer {
+	display: inline-block;
+	position: relative;
+	bottom: 81px;
+	right: 50px;
+	background-color: #59111D;
+	padding: 5px 15px;
+	border-radius: 0 40px 40px 0;
+	text-decoration: underline;
+
+}
+
 .large-film-card__trailer {
 	height: 100%;
 	width: 100%;
 	background-image: url(../images/films/ancestors_of_the_nation_large.jpg);
 	background-size: cover;
 	background-position: center;
+	display: grid;
+	place-items: center;
 }
 
+.large-film-card__trailer--accidents-of-fire {
+	background-image: url(../images/films/accidents_of_fire_large.jpg);
+}
+
+.large-film-card__trailer--mercenary-of-exploration {
+	background-image: url(../images/films/mercenary_of_exploration_large.jpg);
+}
 
 .large-film-card__synopsis {
 	grid-column: span 2;
 }
 
 .film-page-cta {
-	margin: 32px auto;
+	margin: 32px auto 0 auto;
 	display: block;
 	width: 200px;
 	text-align: center;
 }
+
+.film-page-cta--weak {
+	margin: 16px auto 0 auto;
+}
+
+
 
 /* MEDIA QUERIES
 ----------------*/
