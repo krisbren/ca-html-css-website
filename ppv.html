@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Square Eyes - Connecting Film-Lovers. Purchase Film." />
+    <meta
+      name="description"
+      content="Square Eyes - Connecting Film-Lovers. Purchase Film."
+    />
     <title>Square Eyes | Purchase Film</title>
     <link href="css/styles.css" rel="stylesheet" />
   </head>
@@ -14,16 +17,24 @@
         <a href="index.html">
           <img src="images/SquareEyes_Logo_small.png" alt="Square Eyes logo" />
         </a>
-        <label for="hamburger-menu"><img src="icons/menu-button.png" class="header__hamburger-menu-icon"></label>
-        <input type="checkbox" id="hamburger-menu">
+        <label for="hamburger-menu"
+          ><img src="icons/menu-button.png" class="header__hamburger-menu-icon"
+        /></label>
+        <input type="checkbox" id="hamburger-menu" />
         <nav class="nav">
           <div class="nav__search-flex-container-outer">
-            <div class="nav__search-flex-container-inner">
-              <img
+            <form
+              class="nav__search-flex-container-inner"
+              action="search.html"
+              method="POST"
+            >
+              <input
+                type="image"
                 src="icons/Magnifying_glass_icon.png"
                 class="nav__search-icon"
-                alt="Magnifying glass. Icon."
-              /> <!--- Don't know if it's correct semantics to have this item
+                alt="Submit search"
+              />
+              <!--- Don't know if it's correct semantics to have this item
                  in the HTML, but I used a tutorial on how to get this icon 
                  inside the search bar.-->
               <input
@@ -32,87 +43,145 @@
                 class="nav__search"
                 placeholder="Search for films"
               />
-            </div>
+            </form>
           </div>
           <a href="browse.html" class="nav__link">Browse films</a>
           <a href="account.html" class="nav__link">My account</a>
-          <a href="create_acct.html" class=" nav__link nav__link--border">Sign up</a>
+          <a href="create_acct.html" class="nav__link nav__link--border"
+            >Sign up</a
+          >
         </nav>
       </div>
     </header>
     <main>
-      <div class="narrow-page padded">      
+      <div class="narrow-page padded">
         <h1>Purchase film</h1>
         <p>Choose payment method below</p>
         <div class="pay-method">
           <a href="#">
-          <img src="icons/payment_1.png" alt="Pay using credit card">
+            <img
+              class="pay-method__icon"
+              src="icons/payment_1.png"
+              alt="Pay using credit card"
+            />
           </a>
           <a href="#">
-            <img src="icons/payment_2.png" alt="Pay using Paypal">
+            <img
+              class="pay-method__icon"
+              src="icons/payment_2.png"
+              alt="Pay using Paypal"
+            />
           </a>
           <a href="#">
-            <img src="icons/payment_3.png" alt="Pay with Amazon Pay">
+            <img
+              class="pay-method__icon"
+              src="icons/payment_3.png"
+              alt="Pay with Amazon Pay"
+            />
           </a>
         </div>
         <form class="ppv">
           <fieldset class="ppv__field">
             <legend class="ppv__title">Billing info</legend>
             <label for="name" class="log-in__label">Full name</label>
-            <input class="log-in__input log-in__input--short" a" type="text" name="name">
+            <input class="log-in__input log-in__input--short" a" type="text"
+            name="name">
             <label for="address" class="log-in__label">Address</label>
-            <input class="log-in__input log-in__input--short" type="text" name="address">
+            <input
+              class="log-in__input log-in__input--short"
+              type="text"
+              name="address"
+            />
             <div class="ppv__double-fields">
-            <label for="city" class="log-in__label">City</label>
-            <label for="zip" class="log-in__label">Zip</label>
-            <input class="ppv__short-input" type="text" name="zip">
-            <input class="ppv__short-input" type="text" name="city">
-            </div>  
+              <label for="city" class="log-in__label">City</label>
+              <label for="zip" class="log-in__label">Zip</label>
+              <input class="ppv__short-input" type="text" name="zip" />
+              <input class="ppv__short-input" type="text" name="city" />
+            </div>
             <label for="country" class="log-in__label">Country</label>
-            <input class="log-in__input log-in__input--short" type="text" name="country">  
+            <input
+              class="log-in__input log-in__input--short"
+              type="text"
+              name="country"
+            />
           </fieldset>
           <fieldset class="ppv__field">
             <legend class="ppv__title">Credit card info</legend>
             <label class="log-in__label" for="card_number">Card number</label>
-            <input class="log-in__input log-in__input--short" type="text" name="card_number">
-            <label class="log-in__label" for="cardh_name">Cardholder name</label>
-            <input class="log-in__input log-in__input--short" type="text" name="cardh_name">
+            <input
+              class="log-in__input log-in__input--short"
+              type="text"
+              name="card_number"
+            />
+            <label class="log-in__label" for="cardh_name"
+              >Cardholder name</label
+            >
+            <input
+              class="log-in__input log-in__input--short"
+              type="text"
+              name="cardh_name"
+            />
             <label class="log-in__label" for="expire">Expire date</label>
-            <input class="log-in__input log-in__input--short" type="text" name="expire">
+            <input
+              class="log-in__input log-in__input--short"
+              type="text"
+              name="expire"
+            />
             <label class="log-in__label" for="ccv">ccv</label>
-            <input class="ppv__short-input" type="text" name="ccv">  
+            <input class="ppv__short-input" type="text" name="ccv" />
           </fieldset>
-          <input type="submit" value="Submit" class="cta log-in__submit ppv__submit">
+          <input
+            type="submit"
+            value="Submit"
+            class="cta log-in__submit ppv__submit"
+          />
         </form>
-      </div> 
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__flex-container wide-page">
-          <div class="footer__flex-item">
-              <a href="#" class="footer__social-media">
-                <img src="icons/fb-icon.png" alt="Facebook icon" class="footer__social-media-icon-1">
-                <p>Facebook</p>
-              </a>
-              <a href="#" class="footer__social-media">
-                <img src="icons/twitter-icon.png" alt="Twitter icon" class="footer__social-media-icon-2">
-                <p>Twitter</p>
-              </a>
-              <a href="#" class="footer__social-media">
-                <img src="icons/ig-icon.png" alt="Instagram icon" class="footer__social-media-icon-3">
-                <p>Instagram</p>
-              </a>
-          </div>
-          <div class="footer__flex-item">
-              <p>Subscribe to our newsletter</p>
-              <form action="#" class="footer__form">
-                  <input class="footer__input" type="email" name="email" placeholder="Email Address">
-                  <input class="footer__submit" type="submit" value="OK">
-              </form>
-          </div>
-          <div class="footer__flex-item">
-              <p>+55 555 555 5553</p>
-              <a href="#">mail@squareeyes.com</a>
-          </div>
+        <div class="footer__flex-item">
+          <a href="#" class="footer__social-media">
+            <img
+              src="icons/fb-icon.png"
+              alt="Facebook icon"
+              class="footer__social-media-icon-1"
+            />
+            <p>Facebook</p>
+          </a>
+          <a href="#" class="footer__social-media">
+            <img
+              src="icons/twitter-icon.png"
+              alt="Twitter icon"
+              class="footer__social-media-icon-2"
+            />
+            <p>Twitter</p>
+          </a>
+          <a href="#" class="footer__social-media">
+            <img
+              src="icons/ig-icon.png"
+              alt="Instagram icon"
+              class="footer__social-media-icon-3"
+            />
+            <p>Instagram</p>
+          </a>
+        </div>
+        <div class="footer__flex-item">
+          <p>Subscribe to our newsletter</p>
+          <form action="#" class="footer__form">
+            <input
+              class="footer__input"
+              type="email"
+              name="email"
+              placeholder="Email Address"
+            />
+            <input class="footer__submit" type="submit" value="OK" />
+          </form>
+        </div>
+        <div class="footer__flex-item">
+          <p>+55 555 555 5553</p>
+          <a href="#">mail@squareeyes.com</a>
+        </div>
       </div>
     </footer>
   </body>

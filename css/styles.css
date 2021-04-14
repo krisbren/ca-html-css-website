@@ -188,7 +188,7 @@ main {
 
 .nav__search-icon {
     position: absolute;
-    top: 8px;
+    top: 6px;
     left: 8px;
     width: 14px;
   }
@@ -522,6 +522,11 @@ SIGN UP PAGES
 	margin-top: 30px;
 }
 
+.pay-method__icon {
+	max-width: 100%;
+	height: auto;
+}
+
 .ppv {
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -607,14 +612,7 @@ SIGN UP PAGES
 		grid-template-columns: repeat(2, auto 1fr);
 		grid-template-rows: repeat(3, auto);
 	}
-
-	.pay-method {
-		grid-template: auto auto auto / auto;
-		gap: 10px;
-	}
 }
-
-
 
 @media only screen and (max-width: 650px) {
 
@@ -655,6 +653,13 @@ SIGN UP PAGES
 	.nav__search-flex-container-outer {
 		margin: 15px 0 10px 0;
 		justify-content: center;
+	}
+
+
+	.pay-method {
+		grid-template: auto auto auto / auto;
+		gap: 10px;
+
 	}
 
 	.welcome__logo {

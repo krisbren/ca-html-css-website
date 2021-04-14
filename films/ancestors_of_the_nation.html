@@ -28,22 +28,27 @@
         <input type="checkbox" id="hamburger-menu" />
         <nav class="nav">
           <div class="nav__search-flex-container-outer">
-            <div class="nav__search-flex-container-inner">
-              <img
-                src="../icons/Magnifying_glass_icon.png"
-                class="nav__search-icon"
-                alt="Magnifying glass. Icon."
-              />
-              <!--- Don't know if it's correct semantics to have this item
-                 in the HTML, but I used a tutorial on how to get this icon 
-                 inside the search bar.-->
-              <input
-                type="search"
-                name="search"
-                class="nav__search"
-                placeholder="Search for films"
-              />
-            </div>
+            <form
+            class="nav__search-flex-container-inner"
+            action="../search.html"
+            method="POST"
+          >
+            <input
+              type="image"
+              src="../icons/Magnifying_glass_icon.png"
+              class="nav__search-icon"
+              alt="Submit search"
+            />
+            <!--- Don't know if it's correct semantics to have this item
+               in the HTML, but I used a tutorial on how to get this icon 
+               inside the search bar.-->
+            <input
+              type="search"
+              name="search"
+              class="nav__search"
+              placeholder="Search for films"
+            />
+          </form>
           </div>
           <a href="../browse.html" class="nav__link">Browse films</a>
           <a href="../account.html" class="nav__link">My account</a>
