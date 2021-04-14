@@ -72,7 +72,7 @@ main {
 
 
 .film-card {
-	margin: 0 30px 30px 0;
+	margin: 0 25px 30px 0;
 }
 
 .film-card__list {
@@ -112,6 +112,275 @@ main {
 	margin: auto;
 }
 
+/* BROWSE PAGE
+----------------*/
+
+.browse {
+	display: grid;
+	grid-template-rows: repeat(6, auto);
+	gap: 80px;
+}
+
+.browse__heading {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.film-card__image {
+	max-width: 100%;
+	height: auto;
+}
+
+.filter {
+	float: right;
+}
+
+.filter__heading {
+	display: inline-block;
+	margin: 8px 10px 10px 0
+}
+
+.filter__genre {
+	display: inline-block;
+	border: solid 3px #707070;
+	padding: 4px 18px;
+	border-radius: 8px;
+	margin-bottom: 10px;
+}
+
+.lineup {
+	display: grid;
+	grid-template-rows: auto auto;
+}
+
+.lineup__arrow {
+	float: right;
+	margin-right: 30px;
+	margin-bottom: 16px;
+	opacity: 0.3;
+}
+
+.lineup__arrow--clickable {
+	opacity: 1;
+}
+
+.lineup__arrow--small-margin {
+	margin-right: 16px;
+}
+
+.lineup__cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.lineup__heading {
+	display: inline-block;
+	margin-top: 0;
+}
+
+/* CREATE ACCOUNT -,
+ACCOUNT CREATED - and
+SIGN UP PAGES
+----------------*/
+
+.log-in {
+	display: flex;
+	flex-direction: column;
+}
+
+.log-in__anchor {
+	align-self: flex-end;
+	margin-bottom: 32px;
+	margin-top: 8px;
+}
+
+.log-in__label {
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.log-in__input {
+	margin-bottom: 32px;
+	min-width: 350px;
+	padding: 10px;
+	border-radius: 8px;
+}
+
+.log-in__submit {
+	color:#FFFFFF;
+	margin: 32px auto;
+}
+
+.log-in-paragraph {
+	margin-bottom: 32px;
+	max-width: 350px;
+}
+
+/* FEATURED FILMS
+----------------*/
+.featured {
+	height: 750px;
+	margin: 0 20px 30px 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto 20px repeat(5, auto);
+	background-color: #59111d;
+}
+
+.featured__heading {
+	background-color: #373736;
+	grid-column: span 2;
+}
+
+
+.featured__browse-buttons {	
+	background-color: #373736;
+	align-self: center;
+	justify-self: end;
+}
+
+.featured__title {
+	grid-column: span 3;
+}
+
+.featured__image {
+	grid-column: span 3;
+	background-image: url("../images/nadim-merrikh-MBCWO39JVsI-unsplash_medium.png");
+	height: 360px;
+}
+
+.featured__synopsis {
+	grid-column: span 3;
+}
+
+.featured__info {
+	grid-column: span 2;
+}
+
+/* FILM PAGES
+----------------*/
+
+.large-film-card {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.large-film-card__info {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 1fr auto;
+	gap: 50px 20px;
+}
+
+
+.large-film-card__play-trailer {
+	display: inline-block;
+	position: relative;
+	bottom: 81px;
+	right: 50px;
+	background-color: #59111D;
+	padding: 5px 15px;
+	border-radius: 0 40px 40px 0;
+	text-decoration: underline;
+
+}
+
+.large-film-card__trailer {
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/films/ancestors_of_the_nation_large.jpg);
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	place-items: center;
+}
+
+.large-film-card__trailer--accidents-of-fire {
+	background-image: url(../images/films/accidents_of_fire_large.jpg);
+}
+
+.large-film-card__trailer--mercenary-of-exploration {
+	background-image: url(../images/films/mercenary_of_exploration_large.jpg);
+}
+
+.large-film-card__synopsis {
+	grid-column: span 2;
+}
+
+.film-page-cta {
+	margin: 32px auto 0 auto;
+	display: block;
+	width: 200px;
+	text-align: center;
+}
+
+.film-page-cta--weak {
+	margin: 16px auto 0 auto;
+}
+
+/* FOOTER
+----------------*/
+
+.footer {
+	background-color: #707070;
+	padding: 56px 0 48px 0;
+}
+
+.footer__flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.footer__social-media {
+	display: flex;
+	place-items: center;
+}
+
+.footer__social-media-icon-1 {
+	margin-right: 20px;
+}
+
+.footer__social-media-icon-2 {
+	margin-right: 11px;
+}
+
+.footer__social-media-icon-3 {
+	margin-right: 11px;
+}
+
+
+
+.footer__input::placeholder {
+	color: #FFFFFF;
+}
+
+.footer__form {
+	max-width: 400px;
+	display: grid;
+	gap: 23px;
+	grid-template-columns: auto auto;
+	align-items: center;
+}
+
+.footer__input {
+	border-color: #FFFFFF;
+	color: #FFFFFF;
+	border-radius: 3px;
+	height: 25px;
+	padding: 2px 2px 2px 20px;
+	width: 100%;
+	max-width: 375px;
+	background-color: #707070;
+}
+
+.footer__submit {
+	padding: 8px 15px;
+	border-radius: 3px;
+	max-width: 50px;
+}
 
 /* HEADER
 ----------------*/
@@ -201,43 +470,6 @@ main {
 	max-width: 375px;
 }
 
-/* WELCOME
-----------------*/
-.welcome {
-	background-color: #FFFFFF;
-}
-
-.welcome__grid-container {
-	margin-bottom: 20px;
-	padding: 20px;
-	display: grid;
-	gap: 5px 20px;
-	place-items: center;
-	grid-template: repeat(4, auto) / 1fr 1fr;
-	color: #000000;
-}
-
-.welcome__logo {
-	max-width: 600px;
-	grid-column: span 2;
-}
-
-.welcome__slogan {
-	text-align: center;
-	font-style: italic;
-	font-size: 2rem;
-	margin-top: 0;
-	margin-bottom: 10px;
-	grid-column: span 2;
-}
-
-.cta--span {
-	grid-column: span 2;
-	margin: auto;
-	box-shadow: 0 3px 3px #0003;
-
-}
-
 /* LANDING PAGE CONTENT
 ----------------*/
 
@@ -267,237 +499,6 @@ main {
 
 .landing-content__highest-rated__grid-container a:hover {
 	color: #FFFFFF;
-}
-
-/* FEATURED FILMS
-----------------*/
-.featured {
-	height: 750px;
-	margin: 0 20px 30px 0;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: auto 20px repeat(5, auto);
-	background-color: #59111d;
-}
-
-.featured__heading {
-	background-color: #373736;
-	grid-column: span 2;
-}
-
-
-.featured__browse-buttons {	
-	background-color: #373736;
-	align-self: center;
-	justify-self: end;
-}
-
-.featured__title {
-	grid-column: span 3;
-}
-
-.featured__image {
-	grid-column: span 3;
-	background-image: url("../images/nadim-merrikh-MBCWO39JVsI-unsplash_medium.png");
-	height: 360px;
-}
-
-.featured__synopsis {
-	grid-column: span 3;
-}
-
-.featured__info {
-	grid-column: span 2;
-}
-
-/* SEARCH PAGE
-----------------*/
-
-.search-page__search {
-	margin: 64px 0;
-	border: 1px #707070;
-	height: 40px;
-	width: 613px;
-	max-width: 70%;
-	padding: 2px 2px 2px 20px;
-}
-
-.search-page__submit-search {
-	position: relative;
-	top: 14px;
-	left: 8px;
-}
-
-.search-page__search-term {
-	font-style: italic;
-}
-
-.search-page__flex-container {
-	margin-top: 25px;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-/* FOOTER
-----------------*/
-
-.footer {
-	background-color: #707070;
-	padding: 56px 0 48px 0;
-}
-
-.footer__flex-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 20px;
-}
-
-.footer__social-media {
-	display: flex;
-	place-items: center;
-}
-
-.footer__social-media-icon-1 {
-	margin-right: 20px;
-}
-
-.footer__social-media-icon-2 {
-	margin-right: 11px;
-}
-
-.footer__social-media-icon-3 {
-	margin-right: 11px;
-}
-
-
-
-.footer__input::placeholder {
-	color: #FFFFFF;
-}
-
-.footer__form {
-	max-width: 400px;
-	display: grid;
-	gap: 23px;
-	grid-template-columns: auto auto;
-	align-items: center;
-}
-
-.footer__input {
-	border-color: #FFFFFF;
-	color: #FFFFFF;
-	border-radius: 3px;
-	height: 25px;
-	padding: 2px 2px 2px 20px;
-	width: 100%;
-	max-width: 375px;
-	background-color: #707070;
-}
-
-.footer__submit {
-	padding: 8px 15px;
-	border-radius: 3px;
-	max-width: 50px;
-}
-
-/* CREATE ACCOUNT -,
-ACCOUNT CREATED - and
-SIGN UP PAGES
-----------------*/
-
-.log-in {
-	display: flex;
-	flex-direction: column;
-}
-
-.log-in__anchor {
-	align-self: flex-end;
-	margin-bottom: 32px;
-	margin-top: 8px;
-}
-
-.log-in__label {
-	text-transform: uppercase;
-	margin-bottom: 5px;
-}
-
-.log-in__input {
-	margin-bottom: 32px;
-	min-width: 350px;
-	padding: 10px;
-	border-radius: 8px;
-}
-
-.log-in__submit {
-	color:#FFFFFF;
-	margin: 32px auto;
-}
-
-.log-in-paragraph {
-	margin-bottom: 32px;
-	max-width: 350px;
-}
-
-/* FILM PAGES
-----------------*/
-
-.large-film-card {
-	display: grid;
-	grid-template-columns: 50% 50%;
-}
-
-.large-film-card__info {
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 1fr auto;
-	gap: 50px 20px;
-}
-
-
-.large-film-card__play-trailer {
-	display: inline-block;
-	position: relative;
-	bottom: 81px;
-	right: 50px;
-	background-color: #59111D;
-	padding: 5px 15px;
-	border-radius: 0 40px 40px 0;
-	text-decoration: underline;
-
-}
-
-.large-film-card__trailer {
-	height: 100%;
-	width: 100%;
-	background-image: url(../images/films/ancestors_of_the_nation_large.jpg);
-	background-size: cover;
-	background-position: center;
-	display: grid;
-	place-items: center;
-}
-
-.large-film-card__trailer--accidents-of-fire {
-	background-image: url(../images/films/accidents_of_fire_large.jpg);
-}
-
-.large-film-card__trailer--mercenary-of-exploration {
-	background-image: url(../images/films/mercenary_of_exploration_large.jpg);
-}
-
-.large-film-card__synopsis {
-	grid-column: span 2;
-}
-
-.film-page-cta {
-	margin: 32px auto 0 auto;
-	display: block;
-	width: 200px;
-	text-align: center;
-}
-
-.film-page-cta--weak {
-	margin: 16px auto 0 auto;
 }
 
 /* PAYMENT PAGE
@@ -555,6 +556,71 @@ SIGN UP PAGES
 	font-size: larger;
 	text-transform: capitalize;
 	margin-bottom: 32px;
+}
+
+/* SEARCH PAGE
+----------------*/
+
+.search-page__search {
+	margin: 64px 0;
+	border: 1px #707070;
+	height: 40px;
+	width: 613px;
+	max-width: 70%;
+	padding: 2px 2px 2px 20px;
+}
+
+.search-page__submit-search {
+	position: relative;
+	top: 14px;
+	left: 8px;
+}
+
+.search-page__search-term {
+	font-style: italic;
+}
+
+.search-page__flex-container {
+	margin-top: 25px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* WELCOME
+----------------*/
+.welcome {
+	background-color: #FFFFFF;
+}
+
+.welcome__grid-container {
+	margin-bottom: 20px;
+	padding: 20px;
+	display: grid;
+	gap: 5px 20px;
+	place-items: center;
+	grid-template: repeat(4, auto) / 1fr 1fr;
+	color: #000000;
+}
+
+.welcome__logo {
+	max-width: 600px;
+	grid-column: span 2;
+}
+
+.welcome__slogan {
+	text-align: center;
+	font-style: italic;
+	font-size: 2rem;
+	margin-top: 0;
+	margin-bottom: 10px;
+	grid-column: span 2;
+}
+
+.cta--span {
+	grid-column: span 2;
+	margin: auto;
+	box-shadow: 0 3px 3px #0003;
+
 }
 
 /* MEDIA QUERIES
@@ -654,7 +720,6 @@ SIGN UP PAGES
 		margin: 15px 0 10px 0;
 		justify-content: center;
 	}
-
 
 	.pay-method {
 		grid-template: auto auto auto / auto;

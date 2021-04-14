@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Square Eyes - Connecting Film-Lovers. Browse Films." />
+    <meta
+      name="description"
+      content="Square Eyes - Connecting Film-Lovers. Browse Films."
+    />
     <title>Square Eyes | Browse Films</title>
     <link href="css/styles.css" rel="stylesheet" />
   </head>
@@ -14,8 +17,10 @@
         <a href="index.html">
           <img src="images/SquareEyes_Logo_small.png" alt="Square Eyes logo" />
         </a>
-        <label for="hamburger-menu"><img src="icons/menu-button.png" class="header__hamburger-menu-icon"></label>
-        <input type="checkbox" id="hamburger-menu">
+        <label for="hamburger-menu"
+          ><img src="icons/menu-button.png" class="header__hamburger-menu-icon"
+        /></label>
+        <input type="checkbox" id="hamburger-menu" />
         <nav class="nav">
           <div class="nav__search-flex-container-outer">
             <form
@@ -42,46 +47,308 @@
           </div>
           <a href="browse.html" class="nav__link">Browse films</a>
           <a href="account.html" class="nav__link">My account</a>
-          <a href="create_acct.html" class=" nav__link nav__link--border">Sign up</a>
+          <a href="create_acct.html" class="nav__link nav__link--border"
+            >Sign up</a
+          >
         </nav>
       </div>
     </header>
     <main>
-      <div class="wide-page padded">      
-        <h1>Browse films</h1>
-        <h2>Filter</h2>
-        <section>
-        <h2>Highest rated</h2>
+      <div class="wide-page padded browse">
+        <div>
+          <h1 class="browse__heading">Browse films</h1>
+          <section class="filter">
+            <h2 class="filter__heading">Filter</h2>
+            <a class="filter__genre" href="#">Action</a>
+            <a class="filter__genre" href="#">Drama</a>
+            <a class="filter__genre" href="#">Romance</a>
+            <a class="filter__genre" href="#">Scifi</a>
+          </section>
+        </div>
+        <section class="lineup">
+          <div>
+            <h2 class="lineup__heading">Highest rated</h2>
+            <img
+              class="lineup__arrow lineup__arrow--clickable"
+              src="icons/keyboard-right-arrow-button.png"
+              alt="Browse right"
+            />
+            <img
+              class="lineup__arrow lineup__arrow--small-margin"
+              src="icons/keyboard-left-arrow-button.png"
+              alt="Browse left"
+            />
+          </div>
+          <div class="lineup__cards">
+            <div class="film-card">
+              <a href="films/accidents_of_fire.html">
+                <div>
+                  <img
+                    class="film-card__image"
+                    src="images/films/accidents_of_fire_small.jpg"
+                    alt="Firemen standing next to fire trucks."
+                  />
+                  <h3>Accidents of Fire</h3>
+                  <ul class="film-card__list">
+                    <li>Average Rating: 5.0 / 5</li>
+                    <li>Genre: Drama</li>
+                    <li>Producer: Jerry O'Ryan</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="film-card">
+              <a href="films/mercenary_of_exploration.html">
+                <div>
+                  <img
+                    class="film-card__image"
+                    src="images/films/mercenary_of_exploration_small.jpg"
+                    alt="Part of the gun and torso of a modern soldier."
+                  />
+                  <h3>Mercenary of Exploration</h3>
+                  <ul class="film-card__list">
+                    <li>Average Rating: 4.7 / 5</li>
+                    <li>Genre: Action</li>
+                    <li>Producer: Rebekah Aldred</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="film-card">
+              <a href="films/ancestors_of_the_nation.html">
+                <div>
+                  <img
+                    class="film-card__image"
+                    src="images/films/alien_of_our_ship_small.jpg"
+                    alt="Woman touching glowing surface."
+                  />
+                  <h3>Alien of our Ship</h3>
+                  <ul class="film-card__list">
+                    <li>Average Rating: 4.1 / 5</li>
+                    <li>Genre: Action, Scifi</li>
+                    <li>Producer: Sonnie Payne</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="film-card">
+              <a href="films/ancestors_of_the_nation.html">
+                <div>
+                  <img
+                    class="film-card__image"
+                    src="images/films/ancestors_of_the_nation_small.jpg "
+                    alt="Woman in dress standing with arms spread out and looking up."
+                  />
+                  <h3>Ancestors of the Nation</h3>
+                  <ul class="film-card__list">
+                    <li>Average Rating: 3.6  / 5</li>
+                    <li>Genre: Drama</li>
+                    <li>Producer: Kiri Horton</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
         </section>
-        
+        <section class="lineup">
+          <div>
+            <h2 class="lineup__heading">Action</h2>
+            <img
+              class="lineup__arrow"
+              src="icons/keyboard-right-arrow-button.png"
+              alt="Browse right"
+            />
+            <img
+              class="lineup__arrow lineup__arrow--small-margin"
+              src="icons/keyboard-left-arrow-button.png"
+              alt="Browse left"
+            />
+          </div>
+          <div class="lineup__cards">
+            <div class="film-card">
+              <a href="films/accidents_of_fire.html">
+                <div>
+                  <img
+                    class="film-card__image"
+                    src="images/films/changeling_of_the_ship_small.jpg"
+                    alt="Large, wooden sailing ship at sea."
+                  />
+                  <h3>Changeling of the Ship</h3>
+                  <ul class="film-card__list">
+                    <li>Average Rating: 2.5 / 5</li>
+                    <li>Genre: Action</li>
+                    <li>Producer: Tiffany Winter</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="film-card">
+              <a href="films/mercenary_of_exploration.html">
+                <div>
+                  <img
+                    class="film-card__image"
+                    src="images/films/mercenary_of_exploration_small.jpg"
+                    alt="Part of the gun and torso of a modern soldier."
+                  />
+                  <h3>Mercenary of Exploration</h3>
+                  <ul class="film-card__list">
+                    <li>Average Rating: 4.7 / 5</li>
+                    <li>Genre: Action</li>
+                    <li>Producer: Rebekah Aldred</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="film-card">
+              <a href="films/ancestors_of_the_nation.html">
+                <div>
+                  <img
+                    class="film-card__image"
+                    src="images/films/alien_of_our_ship_small.jpg"
+                    alt="Woman touching glowing surface."
+                  />
+                  <h3>Alien of our Ship</h3>
+                  <ul class="film-card__list">
+                    <li>Average Rating: 4.1 / 5</li>
+                    <li>Genre: Action, Scifi</li>
+                    <li>Producer: Sonnie Payne</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="lineup">
+          <div>
+            <h2 class="lineup__heading">Drama</h2>
+            <img
+              class="lineup__arrow"
+              src="icons/keyboard-right-arrow-button.png"
+              alt="Browse right"
+            />
+            <img
+              class="lineup__arrow lineup__arrow--small-margin"
+              src="icons/keyboard-left-arrow-button.png"
+              alt="Browse left"
+            />
+          </div>
+          <div class="lineup__cards">
+            <div class="film-card">
+              <a href="films/accidents_of_fire.html">
+                <div>
+                  <img
+                    class="film-card__image"
+                    src="images/films/accidents_of_fire_small.jpg"
+                    alt="Firemen standing next to fire trucks."
+                  />
+                  <h3>Accidents of Fire</h3>
+                  <ul class="film-card__list">
+                    <li>Average Rating: 5.0 / 5</li>
+                    <li>Genre: Drama</li>
+                    <li>Producer: Jerry O'Ryan</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="film-card">
+              <a href="films/ancestors_of_the_nation.html">
+                <div>
+                  <img
+                    class="film-card__image"
+                    src="images/films/ancestors_of_the_nation_small.jpg "
+                    alt="Woman in dress standing with arms spread out and looking up."
+                  />
+                  <h3>Ancestors of the Nation</h3>
+                  <ul class="film-card__list">
+                    <li>Average Rating: 3.6 / 5</li>
+                    <li>Genre: Drama</li>
+                    <li>Producer: Kiri Horton</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="film-card">
+              <a href="films/ancestors_of_the_nation.html">
+                <div>
+                  <img
+                    class="film-card__image"
+                    src="images/films/admirer_of_the_river_small.jpg "
+                    alt="Calm river through a mossy canyon."
+                  />
+                  <h3>Admirer of the River</h3>
+                  <ul class="film-card__list">
+                    <li>Average Rating: 3.6  / 5</li>
+                    <li>Genre: Drama, Romance</li>
+                    <li>Producer: Kiri Horton</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="film-card">
+              <a href="films/ancestors_of_the_nation.html">
+                <div>
+                  <img
+                    class="film-card__image"
+                    src="images/films/saviour_without_faith_small.jpg "
+                    alt="Man standing in desert."
+                  />
+                  <h3>Saviour without Faith</h3>
+                  <ul class="film-card__list">
+                    <li>Average Rating: 1.1 / 5</li>
+                    <li>Genre: Drama, Scifi</li>
+                    <li>Producer: Jerry O'Ryan</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__flex-container wide-page">
-          <div class="footer__flex-item">
-              <a href="#" class="footer__social-media">
-                <img src="icons/fb-icon.png" alt="Facebook icon" class="footer__social-media-icon-1">
-                <p>Facebook</p>
-              </a>
-              <a href="#" class="footer__social-media">
-                <img src="icons/twitter-icon.png" alt="Twitter icon" class="footer__social-media-icon-2">
-                <p>Twitter</p>
-              </a>
-              <a href="#" class="footer__social-media">
-                <img src="icons/ig-icon.png" alt="Instagram icon" class="footer__social-media-icon-3">
-                <p>Instagram</p>
-              </a>
-          </div>
-          <div class="footer__flex-item">
-              <p>Subscribe to our newsletter</p>
-              <form action="#" class="footer__form">
-                  <input class="footer__input" type="email" name="email" placeholder="Email Address">
-                  <input class="footer__submit" type="submit" value="OK">
-              </form>
-          </div>
-          <div class="footer__flex-item">
-              <p>+55 555 555 5553</p>
-              <a href="#">mail@squareeyes.com</a>
-          </div>
+        <div class="footer__flex-item">
+          <a href="#" class="footer__social-media">
+            <img
+              src="icons/fb-icon.png"
+              alt="Facebook icon"
+              class="footer__social-media-icon-1"
+            />
+            <p>Facebook</p>
+          </a>
+          <a href="#" class="footer__social-media">
+            <img
+              src="icons/twitter-icon.png"
+              alt="Twitter icon"
+              class="footer__social-media-icon-2"
+            />
+            <p>Twitter</p>
+          </a>
+          <a href="#" class="footer__social-media">
+            <img
+              src="icons/ig-icon.png"
+              alt="Instagram icon"
+              class="footer__social-media-icon-3"
+            />
+            <p>Instagram</p>
+          </a>
+        </div>
+        <div class="footer__flex-item">
+          <p>Subscribe to our newsletter</p>
+          <form action="#" class="footer__form">
+            <input
+              class="footer__input"
+              type="email"
+              name="email"
+              placeholder="Email Address"
+            />
+            <input class="footer__submit" type="submit" value="OK" />
+          </form>
+        </div>
+        <div class="footer__flex-item">
+          <p>+55 555 555 5553</p>
+          <a href="#">mail@squareeyes.com</a>
+        </div>
       </div>
     </footer>
   </body>
