@@ -227,13 +227,13 @@ SIGN UP PAGES
 
 .feat-card__anchor {
 	text-transform: uppercase;
+	justify-self: end;
 }
 
 .feat-card__bottom {
 	margin: 24px 32px 0 32px;
 	display: grid;
 	grid-template-columns: 50% 50%;
-	place-items: center;
 }
 
 .feat-card__desc {
@@ -685,6 +685,17 @@ SIGN UP PAGES
 }
 
 @media only screen and (max-width: 650px) {
+
+	.feat-card__anchor {
+		justify-self: center;
+		margin-top: 24px;
+	}
+	
+	.feat-card__bottom {
+		grid-template-columns: 100%;
+		grid-template-rows: auto auto;
+		margin-bottom: 32px;
+	}
 
 	.film-page-cta {
 		width: 150px;
