@@ -78,7 +78,7 @@ main {
 .film-card__list {
 	list-style-type: none;
 	padding: 0;
-	line-height: 1.5;
+	line-height: 1.8;
 	margin-top: 0;
 	margin-bottom: 32px;
 }
@@ -219,44 +219,58 @@ SIGN UP PAGES
 
 /* FEATURED FILMS
 ----------------*/
-.featured {
-	height: 750px;
-	margin: 0 20px 30px 0;
+
+.feat-card {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: auto 20px repeat(5, auto);
-	background-color: #59111d;
+	grid-template-rows: repeat(5, auto);
+}
+
+.feat-card__anchor {
+	text-transform: uppercase;
+}
+
+.feat-card__bottom {
+	margin: 24px 32px 0 32px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	place-items: center;
+}
+
+.feat-card__desc {
+	padding: 24px 32px;
+}
+
+.feat-card__heading {
+	justify-self: center;
+	text-transform: uppercase;
+}
+
+.feat-card__image {
+	width: 100%;
+	height: auto;
+}
+
+.feat-card__indic-container {
+	display: grid;
+	grid-template-columns: repeat(3, 33%);
+}
+
+.feat-card__indicator {
+	height: 20px;
+}
+
+.feat-card__indicator--active {
+	background-color: #6B1620;
+}
+
+.featured__arrow {
+	margin: 20px 0 0 16px;
 }
 
 .featured__heading {
-	background-color: #373736;
-	grid-column: span 2;
+	display: inline-block;
 }
 
-
-.featured__browse-buttons {	
-	background-color: #373736;
-	align-self: center;
-	justify-self: end;
-}
-
-.featured__title {
-	grid-column: span 3;
-}
-
-.featured__image {
-	grid-column: span 3;
-	background-image: url("../images/nadim-merrikh-MBCWO39JVsI-unsplash_medium.png");
-	height: 360px;
-}
-
-.featured__synopsis {
-	grid-column: span 3;
-}
-
-.featured__info {
-	grid-column: span 2;
-}
 
 /* FILM PAGES
 ----------------*/
@@ -480,25 +494,11 @@ SIGN UP PAGES
 	gap: 60px;
 }
 
-.landing-content > section {
-	margin-left: 20px;
-	margin-bottom: 20px;
-}
-
-.landing-content__highest-rated__grid-container {
+.highest-list {
 	display: grid;
 	gap: 10px;
 	grid-template-columns: auto 1fr;
 	grid-template-rows: repeat(5, auto);
-}
-
-.landing-content__highest-rated__grid-container a {
-	text-decoration: underline;
-	color: #FCC889;
-}
-
-.landing-content__highest-rated__grid-container a:hover {
-	color: #FFFFFF;
 }
 
 /* PAYMENT PAGE
@@ -673,10 +673,14 @@ SIGN UP PAGES
 		grid-row: 1; 
 	}
 
-	.landing-content__highest-rated__grid-container {
+	.highest-list {
 		gap: 20px;
 		grid-template-columns: repeat(2, auto 1fr);
 		grid-template-rows: repeat(3, auto);
+	}
+
+	.footer--index {
+		margin-top: -20px;
 	}
 }
 
@@ -731,7 +735,7 @@ SIGN UP PAGES
 		display: none;
 	}
 
-	.landing-content__highest-rated__grid-container {
+	.highest-list {
 		gap: 20px;
 		grid-template-columns: auto 1fr;
 		grid-template-rows: repeat(5, auto);
@@ -769,5 +773,4 @@ SIGN UP PAGES
 	.text-box {
 		padding: 56px 32px 24px 32px;
 	}
-
 }
