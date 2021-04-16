@@ -1,3 +1,9 @@
+:root {
+	--main-bg-color: #373736;
+	--second-bg-color: #59111d;
+	--main-txt-color: #FFFFFF;
+  }
+
 @font-face {
 	font-family: "Lucida Grande";
 	src: url("../fonts/LucidaGrande.ttf") format("truetype");
@@ -12,7 +18,7 @@
 /* GLOBAL
 ----------------*/
 html, body {
-	color: #FFFFFF;
+	color: var(--main-txt-color);
 	margin: 0;
 	padding: 0;
 	font-family:  'Lucida Grande', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Verdana, sans-serif;
@@ -37,26 +43,26 @@ p {
 }
 
 main {
-	background-color: #373736;
+	background-color: var(--main-bg-color);
 	min-height: 80vh;
 }
 
 .colored-box {
-	background-color: #59111D;
+	background-color: var(--second-bg-color);
 	box-shadow: 0 3px 3px #2F2F2E;
 }
 
 .cta {
 	font-size: 1.5em;
 	background: linear-gradient(#FCC889, #8A1F27);
-	border: 1px solid #373736;
+	border: 1px solid var(--main-bg-color);
 	border-radius: 10px;
 	padding: 10px 100px;
 	box-shadow: 0 3px 3px #2F2F2E;
 }
 
 .cta:hover {
-	color: #373736;
+	color: var(--main-bg-color);
 	background: linear-gradient(#FFFFFF, #FCC889);
 }
 
@@ -94,7 +100,7 @@ main {
 }
 
 .normal-anchor:hover {
-	color: #FFFFFF;
+	color: var(--main-txt-color);
 	text-decoration: underline;
 }
 
@@ -329,7 +335,7 @@ SIGN UP PAGES
 	position: relative;
 	bottom: 81px;
 	right: 50px;
-	background-color: #59111D;
+	background-color: var(--second-bg-color);
 	padding: 5px 15px;
 	border-radius: 0 40px 40px 0;
 	text-decoration: underline;
@@ -401,10 +407,8 @@ SIGN UP PAGES
 	margin-right: 11px;
 }
 
-
-
 .footer__input::placeholder {
-	color: #FFFFFF;
+	color: var(--main-txt-color);
 }
 
 .footer__form {
@@ -417,7 +421,7 @@ SIGN UP PAGES
 
 .footer__input {
 	border-color: #FFFFFF;
-	color: #FFFFFF;
+	color: var(--main-txt-color);
 	border-radius: 3px;
 	height: 25px;
 	padding: 2px 2px 2px 20px;
@@ -435,7 +439,7 @@ SIGN UP PAGES
 /* HEADER
 ----------------*/
 .header {
-    background: linear-gradient(.25turn, #FFF, 30%, #59111d 50%);
+    background: linear-gradient(.25turn, #FFF, 30%, var(--second-bg-color) 50%);
     border: solid 1px #707070;
 	box-shadow: 0 3px 3px #2F2F2E;
 }
@@ -483,7 +487,7 @@ SIGN UP PAGES
 }
 
 .nav__link--border:hover {
-	color: #59111d;
+	color: var(--second-bg-color);
 	background: linear-gradient(#FFF, #FCC889);
 	text-decoration: none;
 }
@@ -743,7 +747,7 @@ SIGN UP PAGES
 	}
 	
 	.header {
-		background: linear-gradient(.25turn, #FFF, 65%, #59111d 100%);
+		background: linear-gradient(.25turn, #FFF, 65%, var(--second-bg-color) 100%);
 	}
 	.nav {
 		display: none;
@@ -766,7 +770,7 @@ SIGN UP PAGES
 		top: 116px;
 		left: 0px;
 		z-index: 1000;
-		background-color: #59111d;
+		background-color: var(--second-bg-color);
 		padding-bottom: 15px;
 		border: solid 1px #707070;
 	}
