@@ -112,6 +112,43 @@ main {
 	margin: auto;
 }
 
+/* ACCOUNT PAGE
+----------------*/
+
+.account {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 32px;
+}
+
+.menu {
+	width: 290px;
+	display: grid;
+	grid-template-rows: repeat(5, 100px);
+}
+
+.menu__link {
+	text-transform: uppercase;
+	padding: 40px;
+}
+
+.menu__link:hover {
+	text-decoration: underline;
+	background: #74302F;
+}
+
+.menu__link--active {
+	color: #707070;
+}
+
+.rating {
+	display: inline-block;
+	position: relative;
+	bottom: 8px;
+	margin-right: 5px;
+	margin-bottom: 30px;
+}
+
 /* BROWSE PAGE
 ----------------*/
 
@@ -686,6 +723,10 @@ SIGN UP PAGES
 
 @media only screen and (max-width: 650px) {
 
+	.account {
+		grid-template: auto auto / auto;
+	}
+	
 	.feat-card__anchor {
 		justify-self: center;
 		margin-top: 24px;
