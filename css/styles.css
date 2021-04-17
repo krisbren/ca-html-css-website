@@ -112,6 +112,10 @@ main {
 	padding: 56px 56px 24px 56px;
 }
 
+.weak-text {
+	color: #707070;
+}
+
 .wide-page {
 	max-width: 1366px;
 	margin: auto;
@@ -124,6 +128,59 @@ main {
 	display: grid;
 	grid-template-columns: auto 1fr;
 	gap: 32px;
+}
+
+.account__add-film {
+	position: relative;
+	right: 8px;
+}
+
+.account__cta {
+	color: #FFFFFF;
+	display: block;
+}
+
+.account__input {
+	margin-bottom: 32px;
+	min-width: 350px;
+	padding: 10px;
+	border-radius: 8px;
+}
+
+.account__heading {
+	margin-bottom: 32px;
+	margin-top: 0;
+}
+
+.account__support {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	min-height: 300px;
+	min-width: 350px;
+	padding: 10px;
+	border-radius: 8px;
+}
+
+.account__label {
+	text-transform: uppercase;
+	margin-right: 15px;
+}
+
+.account__no-file {
+	display: inline-block;
+	position: relative;
+	bottom: 41px;
+}
+
+.account__support {
+	display: block;
+	margin-bottom: 20px;
+
+}
+
+.account__views {
+	font-size: larger;
 }
 
 .menu {
@@ -668,6 +725,25 @@ SIGN UP PAGES
 
 @media only screen and (max-width: 900px) {
 
+	.account__label {
+		display: block;
+	}
+
+	.account__input {
+		display: block;
+		margin: 5px 0;
+		min-width: 250px;
+	}
+
+	.account__support {
+		min-width: 250px;
+	}
+
+	.account__update {
+		display: block;
+		margin-bottom: 40px;
+	}
+
 	.large-film-card {
 		grid-template: 360px auto / auto;
 	}
@@ -729,7 +805,7 @@ SIGN UP PAGES
 	.account {
 		grid-template: auto auto / auto;
 	}
-	
+
 	.feat-card__anchor {
 		justify-self: center;
 		margin-top: 24px;
